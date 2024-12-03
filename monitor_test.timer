@@ -1,0 +1,9 @@
+[Unit]
+Description=Monitor every minute
+
+[Timer]
+OnCalendar=*:0/1
+Unit=test-monitor.service
+
+[Install]
+WantedBy=timers.target
