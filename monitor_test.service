@@ -1,0 +1,10 @@
+[Unit]
+Description=test process
+
+[Service]
+Type=oneshot
+ExecStart=/path/to/your/monitor_test.sh
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
